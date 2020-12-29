@@ -1,0 +1,19 @@
+package com.tw.design.a_create.a_singleton;
+
+/**
+ * @author: pengfei.lv
+ * @create: 2020-12-30 00:15
+ **/
+
+public enum H_SingletonEnumDe {
+
+    INSTANCE;
+    // $FF: synthetic field
+    private static final H_SingletonEnum[] $VALUES = new H_SingletonEnum[]{INSTANCE};
+
+
+    public void sayOK() {
+        System.out.println("ok");
+    }
+
+}
