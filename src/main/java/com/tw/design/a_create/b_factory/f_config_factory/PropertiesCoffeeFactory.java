@@ -29,8 +29,6 @@ public class PropertiesCoffeeFactory {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
-
     }
 
     public static Coffee createCoffee(String type) {
