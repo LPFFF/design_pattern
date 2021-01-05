@@ -1,12 +1,9 @@
-package com.tw.design.a_create.d_builder.b_builder2;
-
-import lombok.Data;
+package com.tw.design.a_create.d_builder.b_builder;
 
 /**
  * @author: pengfei.lv
  * @create: 2020-12-25 21:44
  **/
-@Data
 public abstract class BikeBuilder {
     protected Bike bike = new Bike();
 
@@ -14,9 +11,5 @@ public abstract class BikeBuilder {
 
     public abstract void buildSaddle();
 
-    public Bike build() {
-        this.buildFrame();
-        this.buildSaddle();
-        return bike;
-    }
+    public abstract Bike create();
 }

@@ -9,9 +9,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Citation {
     private String name;
-    private Integer age;
 
     public void show() {
-        System.out.println(this.age + "岁的" + this.name + "：获得三好学生");
+        System.out.println(this.name + "：获得三好学生");
     }
 }

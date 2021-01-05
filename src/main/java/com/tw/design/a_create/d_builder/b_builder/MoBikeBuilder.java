@@ -1,4 +1,4 @@
-package com.tw.design.a_create.d_builder.b_builder2;
+package com.tw.design.a_create.d_builder.b_builder;
 
 /**
  * @author: pengfei.lv
@@ -13,5 +13,9 @@ public class MoBikeBuilder extends BikeBuilder {
     public void buildSaddle() {
         this.bike.setSaddle("MoBike 车座");
         System.out.println("安上一个   MoBike   的车座");
+    }
+
+    public Bike create() {
+        return bike;
     }
 }

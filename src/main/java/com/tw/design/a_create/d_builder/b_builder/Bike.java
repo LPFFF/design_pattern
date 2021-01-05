@@ -1,8 +1,6 @@
-package com.tw.design.a_create.d_builder.b_builder2;
+package com.tw.design.a_create.d_builder.b_builder;
 
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @author: pengfei.lv
