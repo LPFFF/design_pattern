@@ -13,10 +13,7 @@ public class B_Computer {
     private String memory;
     private String mainBoard;
 
-    public B_Computer() {
-    }
-
-    private B_Computer(Builder builder) {
+    public B_Computer(Builder builder) {
         cpu = builder.cpu;
         screen = builder.screen;
         memory = builder.memory;
