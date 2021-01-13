@@ -7,8 +7,8 @@ import com.tw.design.b_structure.c_decorator.food.FastFood;
  * @create: 2021-01-13 20:10
  **/
 public class Egg extends Garnish {
-    public Egg(String desc, int price, FastFood fastFood) {
-        super(desc, price, fastFood);
+    public Egg(FastFood fastFood) {
+        super("鸡蛋", 2, fastFood);
     }
 
     public int cost() {

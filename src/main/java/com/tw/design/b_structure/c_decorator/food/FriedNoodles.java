@@ -5,8 +5,8 @@ package com.tw.design.b_structure.c_decorator.food;
  * @create: 2021-01-13 20:01
  **/
 public class FriedNoodles extends FastFood {
-    public FriedNoodles(String dec, int price) {
-        super(dec, price);
+    public FriedNoodles() {
+        super("炒面", 13);
     }
 
     public int cost() {

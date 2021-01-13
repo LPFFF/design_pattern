@@ -11,25 +11,25 @@ import com.tw.design.b_structure.c_decorator.garnish.Egg;
  **/
 public class Client {
     public static void main(String[] args) {
-        FastFood friedRice = new FriedRice("炒饭", 10);
+        FastFood friedRice = new FriedRice();
         System.out.println(friedRice.desc() + "  :  " + friedRice.cost());
 
 
         System.out.println("====================================");
 
-        FastFood friedRiceAndEgg = new Egg("鸡蛋", 2, friedRice);
+        FastFood friedRiceAndEgg = new Egg(friedRice);
         System.out.println(friedRiceAndEgg.desc() + "  :  " + friedRiceAndEgg.cost());
 
 
         System.out.println("====================================");
 
-        FastFood friedRiceAndEggAndBacon = new Bacon("培根", 5, friedRiceAndEgg);
+        FastFood friedRiceAndEggAndBacon = new Bacon(friedRiceAndEgg);
         System.out.println(friedRiceAndEggAndBacon.desc() + "  :  " + friedRiceAndEggAndBacon.cost());
 
 
         System.out.println("====================================");
 
-        FastFood friedRiceAndEggAndBaconAddEgg = new Egg("鸡蛋", 2, friedRiceAndEggAndBacon);
+        FastFood friedRiceAndEggAndBaconAddEgg = new Egg(friedRiceAndEggAndBacon);
         System.out.println(friedRiceAndEggAndBaconAddEgg.desc() + "  :  " + friedRiceAndEggAndBaconAddEgg.cost());
     }
 }

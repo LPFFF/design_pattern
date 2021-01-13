@@ -5,8 +5,8 @@ package com.tw.design.b_structure.c_decorator.food;
  * @create: 2021-01-13 20:01
  **/
 public class FriedRice extends FastFood {
-    public FriedRice(String dec, int price) {
-        super(dec, price);
+    public FriedRice() {
+        super("炒饭", 10);
     }
 
     public int cost() {
